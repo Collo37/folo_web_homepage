@@ -5,7 +5,7 @@ import React from 'react';
 import styles from "./Header.module.css";
 
 const Header = () => {
-    const paths: String[] = ["Home", "Buy Instagram Likes", "Buy Instagram Followers", "Buy Instagram Views", "Contact Us"];
+    const paths: String[] = ["Home", "Buy Instagram Likes", "Buy Instagram Followers", "Buy Instagram Views", "Contact Us", "menu"];
 
     return (
         <header className={styles.container}>
@@ -18,7 +18,7 @@ const Header = () => {
                 {
                     paths.map((path, index) => {
                         return (
-                            <Link href="#" key={index} className={styles.header_link}>{path}</Link>
+                            <Link href="#" key={index} className={`${styles.header_link} ${index === paths.length - 1 && styles.menu}`}>{path}</Link>
                         )
                     })
                 }

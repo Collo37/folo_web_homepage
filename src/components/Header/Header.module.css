@@ -50,3 +50,22 @@
 .free_trial_button:hover {
     background-color: var(--yellow);
 }
+
+.menu {
+    display: none;
+}
+
+@media(max-width: 1134px) {
+
+    .header_link {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .header_items_center {
+        justify-content: flex-end;
+    }
+}
