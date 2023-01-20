@@ -1,0 +1,152 @@
+.container {
+    width: 100%;
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    padding: 0 20px;
+}
+
+.package {
+    height: 80%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    max-width: 360px;
+    border-radius: 50px;
+    width: 100%;
+
+}
+
+.highlighted {
+    background-color: var(--light_blue);
+    height: 100%;
+    padding: 20px 0;
+}
+
+.package_top {
+    height: 30%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    border-bottom: 2px dashed gray;
+    width: 90%;
+}
+
+.highlighted .package_top {
+    border-bottom: 2px dashed rgba(255, 255, 255, 0.5);
+}
+
+.check_mark {
+    position: absolute;
+    top: -3px;
+    right: -7px;
+    background-image: url("../../../public/assets/images/check-mark.svg");
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+}
+
+.package_discount {
+    width: 120px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light_blue);
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.package_followers_count {
+    font-size: 20px;
+    color: var(--blue);
+}
+
+.highlighted .package_followers_count {
+    color: #fff;
+    font-size: 24px;
+}
+
+.package_price {
+    font-size: 24px;
+    color: var(--red);
+    font-weight: bold;
+}
+
+.highlighted .package_price {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.highlighted .package_discount {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.package_center {
+    width: 200px;
+}
+
+.package_detail {
+    list-style: none;
+    color: var(--blue);
+    font-size: 16px;
+}
+
+.highlighted .package_detail {
+    color: #fff;
+}
+
+.package_bottom {
+    height: 100px;
+}
+
+.package_button {
+    width: 200px;
+    height: 60px;
+    border-radius: 45px;
+    border: 2px solid var(--light_blue);
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--light_blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.package_button:hover {
+    background-color: var(--light_blue);
+    color: #fff;
+    filter: brightness(1.2);
+}
+
+
+@media (max-width: 1096px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 1100px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 2200px;
+    }
+
+}

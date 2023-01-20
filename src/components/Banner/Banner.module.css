@@ -1,0 +1,31 @@
+.container {
+    width: 100%;
+    height: 90px;
+    background-color: var(--light_blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Sf-pro-display";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner_row_top {
+    color: #fff;
+    font-size: 18px;
+}
+
+.banner_row_top_green {
+    color: #1eaf1e;
+}
+
+.banner_row_top_yellow {
+    color: var(--yellow);
+}
+
+.banner_row_bottom {
+    color: #fff;
+    opacity: 0.5;
+}
