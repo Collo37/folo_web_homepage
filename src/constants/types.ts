@@ -29,3 +29,8 @@ export interface Review {
     review: string,
     clientName: string
 }
+
+export interface FooterItem {
+    title: string,
+    links: string[]
+}

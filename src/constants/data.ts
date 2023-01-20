@@ -1,4 +1,4 @@
-import { Faq, Feature, Review, SalesPackage, Tutorial } from "./types";
+import { Faq, Feature, FooterItem, Review, SalesPackage, Tutorial } from "./types";
 
 export const salesPackages: SalesPackage[] = [
     {
@@ -146,5 +146,18 @@ export const reviews: Review[] = [
     }, {
         review: "This Is A Good Price For A Valuable Service. People Don't Always Have Time To Wait For Followers. I Highly Reco...",
         clientName: "Beulah Riley"
+    }
+];
+
+export const footerItems: FooterItem[] = [
+    {
+        title: "Services",
+        links: ["Buy Instagram Likes", "Instagram Followers Buy", "Instagram Video Views"]
+    }, {
+        title: "About Folo",
+        links: ["About", "FAQ Blog", "Terms", "Service Contract", "Sitemap"]
+    }, {
+        title: "Contact Us",
+        links: ["Email us: support@idigic.com", "Write for us: writeforus@folo.com"]
     }
 ]
