@@ -76,6 +76,10 @@
         width: 100%;
         height: 50%;
     }
+
+    .selection_right {
+        width: 90%;
+    }
 }
 
 @media(max-width: 480px) {

@@ -29,3 +29,11 @@
     color: #fff;
     opacity: 0.5;
 }
+
+@media(max-width: 620px) {
+    .banner_row_top, .banner_row_bottom {
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+    }
+}
